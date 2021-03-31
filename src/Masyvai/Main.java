@@ -1,10 +1,18 @@
 package Masyvai;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
-        int[] masyvas = {5, 9, 2, -4, 18};
+    public static void main(String[] args) {
+        System.out.println("Įveskite penkis skaičius: ");
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        int d = scanner.nextInt();
+        int e = scanner.nextInt();
+        int[] masyvas = {a, b, c, d, e};
         int tuscias = 0;
         for (int i = 0; i<masyvas.length; i++) {
             if (masyvas[1] > masyvas[0]) {
